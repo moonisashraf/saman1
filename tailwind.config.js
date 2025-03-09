@@ -1,3 +1,6 @@
+// tailwind.config.js
+import forms from '@tailwindcss/forms'; // Use import instead of require
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
@@ -13,6 +16,6 @@ export default {
     },
   },
   plugins: [
-    require('@tailwindcss/forms'),
+    forms, // Updated to use the imported forms plugin
   ],
 };
